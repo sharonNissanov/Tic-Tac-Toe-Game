@@ -1,0 +1,69 @@
+body {
+  background-color: #444;
+  color: white;
+  margin: 20px;
+  font: 32px "Century Gothic", Futura, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.game{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.board-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.new-game{
+  background-color: #444;
+  border: 1px solid #999;
+  border-radius: 80px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  left: 10%;
+  top:20px;
+  position: relative;
+  width: 300px;
+  
+}
+
+@media (min-width: 769px) {
+  .square{
+    background-color: #444;
+    color: white;
+    border: 1px solid #999;
+    padding: 0;
+    font-size: 84px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .square{
+    background-color: #444;
+    color: white;
+    border: 1px solid #999;
+    padding: 0;
+    font-size: 84px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.square:focus {
+  outline: none;
+  background-color: #222;
+}
+
+.status{
+  margin: 20px;
+  font-size: 24px;
+}
